@@ -59,8 +59,6 @@ public class ClientHandler {
                 e.printStackTrace();
             }
         }
-
-
     }
 
     private void readMessage() {
