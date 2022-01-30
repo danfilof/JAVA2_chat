@@ -47,4 +47,9 @@ public class ChatServer {
         clients.remove(client.getNick(), client);
     }
 
+    public void broadcast(String message) {
+        for (ClientHandler client : clients.values()) {
+            client.sendMessage(message);
+        }
+    }
 }
